@@ -1,0 +1,3 @@
+fetch('/message', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({text: 'message 4'})}).then(result => console.log(result))
+fetch('/message/id', { method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({text: 'message 4', id: id})}).then(result => console.log(result))
+fetch('/message/id', { method: 	'DELETE'}).then(result => console.log(result))
